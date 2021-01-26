@@ -13,9 +13,9 @@ $f3->set('DEBUG', 3);
 
 //Define a default root (home page)
 $f3->route('GET /', function () {
-    echo "My Food Page";
-//    $view = new Template();
-//    echo $view->render('views/home.html');
+//    echo "My Food Page";
+    $view = new Template();
+    echo $view->render('views/home.html');
 });
 
 //Rune fat free
